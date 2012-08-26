@@ -17,11 +17,12 @@ Jeweler::Tasks.new do |gem|
   gem.name = "corgi"
   gem.homepage = "http://github.com/comike011/corgi"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
-  gem.email = "mcalhoun@centresource.com"
-  gem.authors = ["Mike Calhoun"]
+  gem.summary = %Q{Easily integrates with placecorgi.com for easy to use place holder corgi images.}
+  gem.description = %Q{Includes a JS file so that you can have an image tag with empty source, but class corgi with width and height for a place holder corgi image.}
+  gem.email = "mikedcalhoun@gmail.com"
+  gem.authors = ["Mike Calhoun", "Travis Roberts"]
   # dependencies defined in Gemfile
+  gem.files.include 'vendor/assets/**/*.*' # explicitly include lib/foo/bar.rb
 end
 Jeweler::RubygemsDotOrgTasks.new
 
@@ -30,14 +31,6 @@ Rake::TestTask.new(:test) do |test|
   test.libs << 'lib' << 'test'
   test.pattern = 'test/**/test_*.rb'
   test.verbose = true
-end
-
-require 'rcov/rcovtask'
-Rcov::RcovTask.new do |test|
-  test.libs << 'test'
-  test.pattern = 'test/**/test_*.rb'
-  test.verbose = true
-  test.rcov_opts << '--exclude "gems/*"'
 end
 
 task :default => :test
