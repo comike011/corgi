@@ -1,4 +1,4 @@
-= corgi =
+# corgi
 
 This gem adds the power and finesse of corgis to your demo site where temp content is needed. 
 
@@ -11,7 +11,7 @@ to your application.js file so that it will be included, then wherever you need 
 
 and a corgi will be added matching the desired dimensions. If invalid or empty values are sent for the dimensions it will default to 300 x 300.
 
-= Copyright =
+# Copyright
 
 Copyright (c) 2012 Mike Calhoun. See LICENSE.txt for
 further details.
