@@ -4,15 +4,11 @@ This gem harnesses placecorgi.com to add the power and finesse of the noble corg
 
 ## Usage ##
 
-Include the gem in your Gemfile
+Include the gem in your Gemfile and run `bundle install`
 
 ```ruby
 gem 'corgi'
 ```
-
-Install gems
-
-  bundle install
 
 In your application.js file (assuming Rails 3.1+ using the asset pipeline)
 
