@@ -1,15 +1,22 @@
-# corgi
+# corgi #
 
-This gem adds the power and finesse of corgis to your demo site where temp content is needed. 
+This gem harnesses placecorgi.com to add the power and finesse of the noble corgi to your demo site where temp content is needed.
 
-Add 
-	require placecorgi 
+## Usage ##
 
-to your application.js file so that it will be included, then wherever you need a place corgi define an image tag as such: 
+In your application.js file (assuming Rails 3.1+ using the asset pipeline)
 
-	<img src="" height=[height] width=[width] class="corgi"> 
+  ```javascript
+	//= require placecorgi
+  ```
 
-and a corgi will be added matching the desired dimensions. If invalid or empty values are sent for the dimensions it will default to 300 x 300.
+In your html, just add a `corgi` class to any image you want to replace with a corgi. Make sure you have the width and height attributes set on the element.
+
+  ```html
+	<img src="/assets/my-boring-image.png" width="480" height="320" class="corgi" />
+  ```
+
+If invalid or empty values are set for the dimensions it will default to 300 x 300.
 
 # Copyright
 
