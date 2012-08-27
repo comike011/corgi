@@ -1,6 +1,6 @@
 # corgi #
 
-This gem harnesses placecorgi.com to add the power and finesse of the noble corgi to your demo site where temp content is needed.
+This gem harnesses [placecorgi.com](http://placecorgi.com/) to add the power and finesse of the noble corgi to your demo site where temp content is needed.
 
 ## Usage ##
 
